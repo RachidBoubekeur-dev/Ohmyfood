@@ -1,0 +1,36 @@
+footer {
+    background-color: rgb(66 66 66);
+    height: 190px;
+    color: white;
+    padding-left: 6%;
+    padding-top: 2px;
+
+    & > h2 {
+        font-family: $police1;
+        font-size: 1.1em;
+        font-weight: inherit;
+    }
+
+    & > h3 {
+        font-family: Arial;
+        font-size: 0.95em;
+        font-weight: inherit;
+        margin-bottom: -7px;
+
+        & > i {
+            font-size: 0.8em;
+            margin-right: 11px;
+        }
+
+        &:nth-of-type(2) > i {
+            font-size: 0.7em;
+            transform: rotate(-10deg);
+            margin-right: 7px;
+        }
+
+        & > a {
+            color: white;
+            text-decoration: none;
+        }
+    }
+}
