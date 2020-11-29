@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap");
 header {
   text-align: center;
   height: 66px;
@@ -45,13 +45,13 @@ body {
   margin: 0px;
 }
 
-section:nth-of-type(1) > aside:nth-of-type(1) {
+body > aside:nth-of-type(1) {
   height: 50px;
   background-color: #dedede;
   text-align: center;
   box-shadow: inset 0px 2px 5px rgba(177, 177, 177, 0.8);
 }
-section:nth-of-type(1) > aside:nth-of-type(1) > p {
+body > aside:nth-of-type(1) > p {
   font-family: "Roboto";
   font-size: 1em;
   color: #424242;
@@ -60,11 +60,11 @@ section:nth-of-type(1) > aside:nth-of-type(1) > p {
   margin-top: 0px;
   margin-left: -34px;
 }
-section:nth-of-type(1) > aside:nth-of-type(1) > p > i {
+body > aside:nth-of-type(1) > p > i {
   margin-right: 17px;
 }
 
-section:nth-of-type(1) > aside:nth-of-type(2) {
+body > aside:nth-of-type(2) {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -74,13 +74,13 @@ section:nth-of-type(1) > aside:nth-of-type(2) {
   padding-top: 18px;
   text-align: center;
 }
-section:nth-of-type(1) > aside:nth-of-type(2) > h2 {
+body > aside:nth-of-type(2) > h2 {
   font-family: "Roboto";
   font-weight: bold;
   width: 240px;
   font-size: 1.4em;
 }
-section:nth-of-type(1) > aside:nth-of-type(2) > h3 {
+body > aside:nth-of-type(2) > h3 {
   font-family: "Roboto";
   font-weight: 400;
   width: 370px;
@@ -88,7 +88,7 @@ section:nth-of-type(1) > aside:nth-of-type(2) > h3 {
   margin-top: -63px;
   font-size: 1.1em;
 }
-section:nth-of-type(1) > aside:nth-of-type(2) > button {
+body > aside:nth-of-type(2) > button {
   width: 226px;
   height: 50px;
   border: 0px solid black;
@@ -99,9 +99,170 @@ section:nth-of-type(1) > aside:nth-of-type(2) > button {
   background: linear-gradient(174deg, #FF79DA, #9356DC);
   box-shadow: 0px 3px 9px #afafaf;
   margin-top: -45px;
+  cursor: pointer;
+  transition: all 500ms;
+}
+body > aside:nth-of-type(2) > button:hover {
+  background: linear-gradient(174deg, #ff81dc, #975cdd);
+  box-shadow: 0px 3px 9px #7d7d7d;
+}
+
+body > article:nth-of-type(1) {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  height: 430px;
+  padding-bottom: 37px;
+}
+body > article:nth-of-type(1) > h2 {
+  flex: auto;
+  font-family: "Roboto";
+  margin-left: 20px;
+  margin-top: 50px;
+  margin-bottom: -7px;
+  font-weight: bold;
+}
+body > article:nth-of-type(1) > aside {
+  display: flex;
+  align-items: center;
+  width: 87%;
+  height: 75px;
+  border-radius: 20px;
+  margin-left: 10px;
+  background: #f2f2f2;
+  box-shadow: 0px 3.5px 12px #c5c5c5;
+  font-family: "Roboto";
+}
+body > article:nth-of-type(1) > aside > p {
+  color: white;
+  border: 1px solid #9356DC;
+  border-radius: 50px;
+  background-color: #9356DC;
+  padding: 7px;
+  padding-top: 3px;
+  text-align: center;
+  width: 9px;
+  height: 12px;
+  margin-left: -12px;
+  font-size: 14px;
+  margin-top: 20px;
+  margin-right: 7%;
+}
+body > article:nth-of-type(1) > aside:nth-of-type(1) > i {
+  color: gray;
+  font-size: 1.3em;
+}
+body > article:nth-of-type(1) > aside:nth-of-type(2) > i {
+  color: gray;
+  font-size: 1.2em;
+  margin-right: -6.5px;
+}
+body > article:nth-of-type(1) > aside:nth-of-type(3) > i {
+  color: #9356DC;
+  font-size: 1.05em;
+  margin-right: -8px;
+}
+body > article:nth-of-type(1) > aside > h3 {
+  margin-left: 9%;
+  font-size: 17px;
+}
+body > article:nth-of-type(1) > aside:nth-of-type(2) {
+  margin-bottom: -12px;
+  margin-top: -12px;
+}
+body > article:nth-of-type(1) > aside:nth-of-type(3) {
+  background: #f3e8f0;
+}
+
+body > article:nth-of-type(2) {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background: #f2f2f2;
+  padding-bottom: 13%;
+}
+body > article:nth-of-type(2) > h2 {
+  flex: auto;
+  font-family: "Roboto";
+  margin-left: 20px;
+  margin-top: 50px;
+  font-weight: bold;
+}
+body > article:nth-of-type(2) > a {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  color: black;
+  text-decoration: none;
+}
+body > article:nth-of-type(2) > a > figure {
+  display: flex;
+  flex-wrap: wrap;
+  width: 90%;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 2px;
+}
+body > article:nth-of-type(2) > a > figure > span {
+  position: absolute;
+  margin-top: 14px;
+  right: 8%;
+  color: #008c6f;
+  border: 0px solid black;
+  border-radius: 2.5px;
+  padding: 7px;
+  padding-right: 11px;
+  padding-left: 11px;
+  background: #9ee9bf;
+  font-family: "Roboto";
+  font-size: 0.86em;
+  font-weight: bold;
+}
+body > article:nth-of-type(2) > a > figure > img {
+  width: 100%;
+  height: 175.5px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  box-shadow: 0px 3px 8px #a5a5a573;
+}
+body > article:nth-of-type(2) > a > figure > figcaption {
+  width: 100%;
+  height: 76px;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  align-self: flex-end;
+  background: white;
+  box-shadow: 0px 0px 11px #a5a5a573;
+  padding-left: 15px;
+  font-family: "Roboto";
+}
+body > article:nth-of-type(2) > a > figure > figcaption > h3 {
+  margin-top: 15px;
+}
+body > article:nth-of-type(2) > a > figure > figcaption > p {
+  font-size: 1.1em;
+  margin-top: -17px;
+}
+body > article:nth-of-type(2) > a > figure > figcaption > i {
+  position: absolute;
+  margin-top: -55px;
+  right: 12%;
+  font-size: 1.6em;
+  color: gray;
+  transition: all 150ms;
+  cursor: pointer;
+}
+body > article:nth-of-type(2) > a > figure > figcaption > i:hover {
+  font-weight: bold;
+  background: -webkit-linear-gradient(235deg, #9356DC, #FF79DA);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 #loading {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   position: absolute;
   top: 0px;
   left: 0px;
@@ -109,25 +270,33 @@ section:nth-of-type(1) > aside:nth-of-type(2) > button {
   width: 100%;
   height: 100%;
   opacity: 0;
-  display: none;
   animation: loading 3s;
 }
 #loading > img {
   width: 40%;
-  position: absolute;
+  position: fixed;
   top: 31%;
-  left: 38%;
+  margin-left: 7%;
 }
 #loading > h2 {
   font-family: "Shrikhand";
   color: #9356DC;
-  position: absolute;
+  position: fixed;
   top: 52.5%;
-  left: 33%;
   font-size: 1.8em;
   animation: loadingText 1.5s backwards infinite alternate;
 }
 
+@keyframes loading {
+  0% {
+    opacity: 1;
+    height: 400%;
+  }
+  100% {
+    opacity: 0.99;
+    height: 400%;
+  }
+}
 @keyframes loadingText {
   0% {
     transform: scale(1);

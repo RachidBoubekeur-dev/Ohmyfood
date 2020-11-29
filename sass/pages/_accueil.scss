@@ -1,0 +1,296 @@
+body {
+    margin: 0px;
+}
+
+body > aside:nth-of-type(1) {
+    height: 50px;
+    background-color: #dedede;
+    text-align: center;
+    box-shadow: inset 0px 2px 5px rgb(177, 177, 177, 0.8);
+
+    & > p {
+        font-family: "Roboto";
+        font-size: 1em;
+        color: #424242;
+        font-weight: bold;
+        padding-top: 15px;
+        margin-top: 0px;
+        margin-left: -34px;
+
+        & > i {
+            margin-right: 17px;
+        }
+    }
+}
+
+body > aside:nth-of-type(2) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 268px;
+    margin-top: 0px;
+    background: $background1;
+    padding-top: 18px;
+    text-align: center;
+
+    & > h2 {
+        font-family: $police2;
+        font-weight: bold;
+        width: 240px;
+        font-size: 1.4em;
+    }
+
+    & > h3 {
+        font-family: $police2;
+        font-weight: 400;
+        width: 370px;
+        color: #636363;
+        margin-top: -63px;
+        font-size: 1.1em;
+
+    }
+
+    & > button {
+        width: 226px;
+        height: 50px;
+        border: 0px solid black;
+        border-radius: 50px;
+        color: white;
+        font-family: $police2;
+        font-size: 1em;
+        background: linear-gradient(174deg, $color2, $color1);
+        box-shadow: 0px 3px 9px #afafaf;
+        margin-top: -45px;
+        cursor: pointer;
+        transition: all 500ms;
+
+        &:hover {
+            background: linear-gradient(174deg, lighten($color2, 1.5%), lighten($color1, 1.5%));
+            box-shadow: 0px 3px 9px darken(#969696, 10%);
+         }
+    }
+}
+
+body > article:nth-of-type(1) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 430px;
+    padding-bottom: 37px;
+
+    & > h2 {
+        flex: auto;
+        font-family: $police2;
+        margin-left: 20px;
+        margin-top: 50px;
+        margin-bottom: -7px;
+        font-weight: bold;
+    }
+
+    & > aside {
+        display: flex;
+        align-items: center;
+        width: 87%;
+        height: 75px;
+        border-radius: 20px;
+        margin-left: 10px;
+        background: #f2f2f2;
+        box-shadow: 0px 3.5px 12px #c5c5c5;
+        font-family: $police2;
+
+        & > p {
+            color: white;
+            border: 1px solid $color1;
+            border-radius: 50px;
+            background-color: $color1;
+            padding: 7px;
+            padding-top: 3px;
+            text-align: center;
+            width: 9px;
+            height: 12px;
+            margin-left: -12px;
+            font-size: 14px;
+            margin-top: 20px;
+            margin-right: 7%;
+        }
+
+        &:nth-of-type(1) > i {
+            color: gray;
+            font-size: 1.3em;
+        }
+
+        &:nth-of-type(2) > i {
+            color: gray;
+            font-size: 1.2em;
+            margin-right: -6.5px;
+        }
+
+        &:nth-of-type(3) > i {
+            color: $color1;
+            font-size: 1.05em;
+            margin-right: -8px;
+        }
+
+        & > h3 {
+            margin-left: 9%;
+            font-size: 17px;
+        }
+    }
+
+    & > aside:nth-of-type(2) {
+        margin-bottom: -12px;
+        margin-top: -12px;
+    }
+
+    & > aside:nth-of-type(3) {
+        background: #f3e8f0;
+    }
+}
+
+body > article:nth-of-type(2) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background: $background1;
+    padding-bottom: 13%;
+
+    & > h2 {
+        flex: auto;
+        font-family: $police2;
+        margin-left: 20px;
+        margin-top: 50px;
+        font-weight: bold;
+    }
+
+    & > a {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        color: black;
+        text-decoration: none;
+    }
+
+    & > a > figure {
+        display: flex;
+        flex-wrap: wrap;
+        width: 90%;
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-top: 2px;
+
+        & > span {
+            position: absolute;
+            margin-top: 14px;
+            right: 8%;
+            color: darken(#00a583, 5%);
+            border: 0px solid black;
+            border-radius: 2.5px;
+            padding: 7px;
+            padding-right: 11px;
+            padding-left: 11px;
+            background: lighten(#9ae8bc, 1%);
+            font-family: "Roboto";
+            font-size: 0.86em;
+            font-weight: bold;
+        }
+
+        & > img {
+            width: 100%;
+            height: 175.5px;
+            border-top-left-radius: 15px;
+            border-top-right-radius: 15px;
+            box-shadow: 0px 3px 8px #a5a5a573;
+        }
+
+        & > figcaption {
+            width: 100%;
+            height: 76px;
+            border-bottom-left-radius: 15px;
+            border-bottom-right-radius: 15px;
+            align-self: flex-end;
+            background: white;
+            box-shadow: 0px 0px 11px #a5a5a573;
+            padding-left: 15px;
+            font-family: $police2;
+
+            & > h3 {
+                margin-top:15px;
+            }
+
+            & > p {
+                font-size: 1.1em;
+                margin-top: -17px;
+            }
+
+            & > i {
+                position: absolute;
+                margin-top: -55px;
+                right: 12%;
+                font-size: 1.6em;
+                color: gray;
+                transition: all 150ms;
+                cursor: pointer;
+
+                &:hover {
+                    font-weight: bold;
+                    background: -webkit-linear-gradient(235deg,$color1, $color2);
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                }
+            }
+        }
+    }
+}
+
+#loading {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background: white;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    animation: loading 3s;
+
+    & > img {
+        width: 40%;
+        position: fixed;
+        top: 31%;
+        margin-left: 7%;
+    }
+
+    & > h2 {
+        font-family: $police1;
+        color: #9356DC ;
+        position: fixed;
+        top: 52.5%;
+        font-size: 1.8em;
+        animation: loadingText 1.5s backwards infinite alternate;
+    }
+}
+
+@keyframes loading {
+    0% {
+        opacity: 1;
+        height: 400%;
+    }
+
+    100% {
+        opacity: 0.99;
+        height: 400%;
+    }
+}
+
+@keyframes loadingText {
+    0% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(1.3);
+        color: #99E2D0
+    }
+}
