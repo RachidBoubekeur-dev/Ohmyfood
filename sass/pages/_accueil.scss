@@ -226,9 +226,9 @@ body > article:nth-of-type(2) {
     justify-content: center;
     position: absolute;
     top: 0px;
-    left: 0px;
+    left: -100%;
     background: white;
-    width: 100%;
+    width: 0%;
     height: 100%;
     opacity: 0;
     animation: loading 3s;
@@ -252,11 +252,15 @@ body > article:nth-of-type(2) {
 
 @keyframes loading {
     0% {
+        width: 100%;
+        left: 0%;
         opacity: 1;
         height: 400%;
     }
 
     100% {
+        width: 100%;
+        left: 0%;
         opacity: 0.99;
         height: 400%;
     }
