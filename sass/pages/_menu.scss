@@ -233,3 +233,71 @@ section > article {
         margin-bottom: -36px;
     }
 }
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    header {
+        position: absolute;
+        top: 0px;
+        text-align: center;
+        width: 100%;
+        height: 66px;
+        background: white;
+    
+        & > a {
+            position: absolute;
+            left: 4%;
+            top: 36%;
+        }
+    }
+
+    body > div > img {
+        width: 100%;
+        height: auto;
+        margin-top: -15%;
+        margin-bottom: -11%;
+    }
+
+    section {
+        & > h1 {
+            padding-left: 40px;
+            margin-bottom: 25px;
+        }
+
+        & > i {
+            right: 7%;
+        }
+
+        & > article {
+            padding-left: 18%;
+            padding-right: 18%;
+
+            & > h2 {
+                left: 19%;
+            }
+
+            & > div {
+                margin-top: 51px;
+                margin-bottom: -36px;
+
+                & > p:nth-of-type(2) {
+                    right: inherit;
+                    margin-left: 51.5%;
+                }
+
+                &:hover > p:nth-of-type(2) {
+                    right: inherit;
+                    margin-left: 34%;
+                }
+
+                & > div {
+                    right: inherit;
+                    margin-left: 43%; 
+                }
+            }
+        }
+
+        & > button {
+            margin-bottom: 12%;
+        }
+    }
+}

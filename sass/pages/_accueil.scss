@@ -251,10 +251,10 @@ body > article:nth-of-type(2) {
     animation: loading 3s;
 
     & > img {
-        width: 170px;
+        width: 140px;
         position: fixed;
-        top: 31%;
-        margin-left: 30px;
+        bottom: 42.5%;
+        margin-left: 22px;
     }
 
     & > h2 {
@@ -272,14 +272,14 @@ body > article:nth-of-type(2) {
         width: 100%;
         left: 0%;
         opacity: 1;
-        height: 500%;
+        height: 600%;
     }
 
     100% {
         width: 100%;
         left: 0%;
         opacity: 0.99;
-        height: 500%;
+        height: 600%;
     }
 }
 
@@ -330,6 +330,74 @@ body > article:nth-of-type(2) {
 
         & > figcaption > i {
             right: 18%;
+        }
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    body > section {
+
+        & > h1 {
+            width: auto;
+            font-size: 1.5em;
+        }
+
+        & > h3 {
+            padding-left: 22%;
+            padding-right: 22%;
+            font-size: 1.2em;
+        }
+    }
+
+    body > article:nth-of-type(1) {
+
+        & > h2 {
+            width: 100%;
+            margin-left: 6%;
+        }
+
+        & > div {
+            width: 410px;
+            margin-left: 10%;
+            margin-right: 10%;
+        } 
+    }
+
+    body > article:nth-of-type(2) {
+        padding-bottom: 7%;
+
+        & > h2 {
+            margin-left: 6%;
+            margin-bottom: 25px;
+            width: 100%;
+        }
+
+        & > a {
+            display: contents;
+            & > figure{
+                width: 40%;
+                margin-left: 4%;
+                margin-right: 4%;
+                margin-top: 15px;
+    
+                & > img {
+                    height: auto;
+                }
+    
+                & > span {
+                    right: inherit;
+                    margin-left: 31%;
+                }
+
+                & > figcaption {
+                    margin-top: -3px;
+
+                    & > i {
+                        right: inherit;
+                        margin-left: 33%;
+                    }
+                }
+            }
         }
     }
 }

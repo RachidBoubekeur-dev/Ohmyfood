@@ -261,13 +261,12 @@ body > article:nth-of-type(2) > a > figure > figcaption > i {
   color: black;
   cursor: pointer;
   font-weight: bold;
-  background: white;
   background-size: auto 0%;
   background-repeat: no-repeat;
   -webkit-text-stroke-width: 1px;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  transition: all 1s;
+  transition: all 600ms;
 }
 body > article:nth-of-type(2) > a > figure > figcaption > i:hover {
   color: -webkit-linear-gradient(235deg, #9356DC, #FF79DA);
@@ -294,10 +293,10 @@ body > article:nth-of-type(2) > a > figure > figcaption > i:hover {
   animation: loading 3s;
 }
 #loading > img {
-  width: 170px;
+  width: 140px;
   position: fixed;
-  top: 31%;
-  margin-left: 30px;
+  bottom: 42.5%;
+  margin-left: 22px;
 }
 #loading > h2 {
   font-family: "Shrikhand";
@@ -313,13 +312,13 @@ body > article:nth-of-type(2) > a > figure > figcaption > i:hover {
     width: 100%;
     left: 0%;
     opacity: 1;
-    height: 500%;
+    height: 600%;
   }
   100% {
     width: 100%;
     left: 0%;
     opacity: 0.99;
-    height: 500%;
+    height: 600%;
   }
 }
 @keyframes loadingText {
@@ -358,6 +357,59 @@ body > article:nth-of-type(2) > a > figure > figcaption > i:hover {
   }
   body > article:nth-of-type(2) > a > figure > figcaption > i {
     right: 18%;
+  }
+}
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  body > section > h1 {
+    width: auto;
+    font-size: 1.5em;
+  }
+  body > section > h3 {
+    padding-left: 22%;
+    padding-right: 22%;
+    font-size: 1.2em;
+  }
+
+  body > article:nth-of-type(1) > h2 {
+    width: 100%;
+    margin-left: 6%;
+  }
+  body > article:nth-of-type(1) > div {
+    width: 410px;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+
+  body > article:nth-of-type(2) {
+    padding-bottom: 7%;
+  }
+  body > article:nth-of-type(2) > h2 {
+    margin-left: 6%;
+    margin-bottom: 25px;
+    width: 100%;
+  }
+  body > article:nth-of-type(2) > a {
+    display: contents;
+  }
+  body > article:nth-of-type(2) > a > figure {
+    width: 40%;
+    margin-left: 4%;
+    margin-right: 4%;
+    margin-top: 15px;
+  }
+  body > article:nth-of-type(2) > a > figure > img {
+    height: auto;
+  }
+  body > article:nth-of-type(2) > a > figure > span {
+    right: inherit;
+    margin-left: 31%;
+  }
+  body > article:nth-of-type(2) > a > figure > figcaption {
+    margin-top: -3px;
+  }
+  body > article:nth-of-type(2) > a > figure > figcaption > i {
+    right: inherit;
+    margin-left: 33%;
   }
 }
 
