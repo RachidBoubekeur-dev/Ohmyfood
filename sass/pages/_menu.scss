@@ -42,9 +42,12 @@ section {
             right: 3.5%;
         }
         margin-top: 28px;
-        font-size: 1.5em;
-        color: #676767;
+        font-size: 1.4em;
         @include btnJaime;
+    }
+
+    .fab, .far {
+        font-weight: bold;
     }
 
     & > button {
@@ -76,19 +79,20 @@ section > article {
     }
 }
 
-section > article > aside { 
+section > article > div { 
     display: flex;
     flex-wrap: wrap;
     width: 93%;
     min-height: 69px;
-    margin-top: 13%;
-    margin-bottom: -9%;
+    margin-top: 51px;
+    margin-bottom: -36px;
     background: white;
     border: 0px solid white;
     border-radius: 14px;
     box-shadow: 0px 2.5px 10px #cecece;
     font-family: $police2;
     text-align: left;
+    animation: carte 1250ms backwards;
     cursor: pointer;
 
     & > h3 {
@@ -148,7 +152,7 @@ section > article > aside {
         }
     }
 
-    & > #aside-div {
+    & > #carte-div {
         height: 54px;
         padding-top: 31px;
     }
@@ -159,7 +163,7 @@ section > article > aside {
             width: 60%;
             transition: 680ms;
         }
-        
+
         & > p:nth-of-type(1) {
             width: 60%;
             transition: 680ms;
@@ -181,6 +185,32 @@ section > article > aside {
     }
 }
 
+section > article {
+    &:nth-of-type(1) > div {
+        animation-delay: 0ms;
+    }
+    
+    &:nth-of-type(2) > div {
+        animation-delay: 500ms;
+    }
+
+    &:nth-of-type(3) > div {
+        animation-delay: 750ms;
+    }
+}
+
+@keyframes carte {
+    0% {
+        opacity: 0;
+        margin-top: 62px;
+    }
+
+    100% {
+        opacity: 1;
+        margin-top: 51px;
+    }
+}
+
 @keyframes select {
     0% {
         transform: rotate(100deg);
@@ -188,5 +218,18 @@ section > article > aside {
 
     100% {
         transform: rotate(360deg);
+    }
+}
+
+@media screen and (min-width: 450px) and (max-width: 768px) {
+    body > div > img {
+        width: 100%;
+        height: auto;
+        margin-bottom: -10%;
+    }
+
+    section > article > div {
+        margin-top: 51px;
+        margin-bottom: -36px;
     }
 }

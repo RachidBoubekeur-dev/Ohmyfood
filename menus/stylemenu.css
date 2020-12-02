@@ -81,10 +81,16 @@ section > i {
   position: absolute;
   right: 10%;
   margin-top: 28px;
-  font-size: 1.5em;
-  color: #676767;
-  transition: all 150ms;
+  font-size: 1.4em;
+  color: black;
   cursor: pointer;
+  font-weight: bold;
+  background-size: auto 0%;
+  background-repeat: no-repeat;
+  -webkit-text-stroke-width: 1px;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all 600ms;
 }
 @media screen and (max-width: 338px) {
   section > i {
@@ -92,10 +98,17 @@ section > i {
   }
 }
 section > i:hover {
-  font-weight: bold;
+  color: -webkit-linear-gradient(235deg, #9356DC, #FF79DA);
   background: -webkit-linear-gradient(235deg, #9356DC, #FF79DA);
+  color: #5f5f5f;
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+  -webkit-text-stroke-width: thin;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+section .fab, section .far {
+  font-weight: bold;
 }
 section > button {
   width: 194px;
@@ -110,6 +123,7 @@ section > button {
   background: linear-gradient(174deg, #FF79DA, #9356DC);
   box-shadow: 0px 3px 9px #afafaf;
   cursor: pointer;
+  outline: none;
   transition: all 500ms;
 }
 section > button:hover {
@@ -137,22 +151,23 @@ section > article > h2 {
   width: 40px;
 }
 
-section > article > aside {
+section > article > div {
   display: flex;
   flex-wrap: wrap;
   width: 93%;
   min-height: 69px;
-  margin-top: 13%;
-  margin-bottom: -9%;
+  margin-top: 51px;
+  margin-bottom: -36px;
   background: white;
   border: 0px solid white;
   border-radius: 14px;
   box-shadow: 0px 2.5px 10px #cecece;
   font-family: "Roboto";
   text-align: left;
+  animation: carte 1250ms backwards;
   cursor: pointer;
 }
-section > article > aside > h3 {
+section > article > div > h3 {
   font-size: 1.1em;
   margin-left: 10px;
   margin-top: 13px;
@@ -162,7 +177,7 @@ section > article > aside > h3 {
   white-space: nowrap;
   transition: 450ms;
 }
-section > article > aside > p:nth-of-type(1) {
+section > article > div > p:nth-of-type(1) {
   margin-left: 10px;
   margin-top: -13px;
   margin-bottom: 11px;
@@ -174,7 +189,7 @@ section > article > aside > p:nth-of-type(1) {
   white-space: nowrap;
   transition: 450ms;
 }
-section > article > aside > p:nth-of-type(2) {
+section > article > div > p:nth-of-type(2) {
   font-weight: bold;
   color: #3c3c3c;
   position: absolute;
@@ -182,7 +197,7 @@ section > article > aside > p:nth-of-type(2) {
   margin-top: 38px;
   transition: 450ms;
 }
-section > article > aside > div {
+section > article > div > div {
   display: flex;
   justify-content: center;
   position: absolute;
@@ -198,42 +213,74 @@ section > article > aside > div {
   transform: scaleX(0);
   transition: 450ms;
 }
-section > article > aside > div > i {
+section > article > div > div > i {
   color: white;
   font-size: 1.35em;
   position: inherit;
   transition: 450ms;
 }
-section > article > aside > #aside-div {
+section > article > div > #carte-div {
   height: 54px;
   padding-top: 31px;
 }
-section > article > aside:hover > h3 {
+section > article > div:hover > h3 {
   width: 60%;
   transition: 680ms;
 }
-section > article > aside:hover > p:nth-of-type(1) {
+section > article > div:hover > p:nth-of-type(1) {
   width: 60%;
   transition: 680ms;
 }
-section > article > aside:hover > p:nth-of-type(2) {
+section > article > div:hover > p:nth-of-type(2) {
   right: 25%;
   transition: 580ms;
 }
-section > article > aside:hover > div {
+section > article > div:hover > div {
   transform: scaleX(1);
   transition: 580ms;
 }
-section > article > aside:hover > div > i {
+section > article > div:hover > div > i {
   animation: select 580ms backwards;
 }
 
+section > article:nth-of-type(1) > div {
+  animation-delay: 0ms;
+}
+section > article:nth-of-type(2) > div {
+  animation-delay: 500ms;
+}
+section > article:nth-of-type(3) > div {
+  animation-delay: 750ms;
+}
+
+@keyframes carte {
+  0% {
+    opacity: 0;
+    margin-top: 62px;
+  }
+  100% {
+    opacity: 1;
+    margin-top: 51px;
+  }
+}
 @keyframes select {
   0% {
     transform: rotate(100deg);
   }
   100% {
     transform: rotate(360deg);
+  }
+}
+@media screen and (min-width: 450px) and (max-width: 768px) {
+  body > div > img {
+    width: 100%;
+    height: auto;
+    margin-bottom: -10%;
+  }
+
+  section > article > div {
+    margin-top: 51px;
+    margin-bottom: -36px;
   }
 }
 
