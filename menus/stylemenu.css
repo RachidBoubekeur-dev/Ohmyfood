@@ -1,0 +1,689 @@
+@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap");
+header {
+  text-align: center;
+  height: 66px;
+}
+header > img {
+  margin-top: 24px;
+  width: 165px;
+}
+
+footer {
+  background-color: #424242;
+  height: 190px;
+  color: white;
+  padding-left: 6%;
+  padding-top: 2px;
+}
+footer > h2 {
+  font-family: "Shrikhand";
+  font-size: 1.1em;
+  font-weight: inherit;
+}
+footer > h3 {
+  font-family: Arial;
+  font-size: 0.95em;
+  font-weight: inherit;
+  margin-bottom: -7px;
+}
+footer > h3 > i {
+  font-size: 0.8em;
+  margin-right: 11px;
+}
+footer > h3:nth-of-type(2) > i {
+  font-size: 0.7em;
+  transform: rotate(-10deg);
+  margin-right: 7px;
+}
+footer > h3 > a {
+  color: white;
+  text-decoration: none;
+}
+
+body {
+  margin: 0px;
+}
+
+header > a {
+  position: absolute;
+  left: 5%;
+  top: 4.25%;
+  font-size: 1.25em;
+  color: #3c3c3c;
+  cursor: pointer;
+}
+
+body > div > img {
+  width: 100%;
+  height: 258px;
+}
+
+section {
+  position: relative;
+  border: 0px solid black;
+  border-top-left-radius: 37px;
+  border-top-right-radius: 37px;
+  background: #f2f2f2;
+  margin-top: -55px;
+  padding-top: 9px;
+  padding-bottom: 1px;
+  text-align: center;
+}
+section > h1 {
+  font-family: "Shrikhand";
+  font-size: 1.7em;
+  font-weight: unset;
+  padding-left: 18px;
+  text-align: left;
+}
+section > i {
+  position: absolute;
+  right: 10%;
+  margin-top: 28px;
+  font-size: 1.4em;
+  color: black;
+  cursor: pointer;
+  font-weight: bold;
+  background-size: auto 0%;
+  background-repeat: no-repeat;
+  -webkit-text-stroke-width: 1px;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all 600ms;
+}
+@media screen and (max-width: 338px) {
+  section > i {
+    right: 3.5%;
+  }
+}
+section > i:hover {
+  color: -webkit-linear-gradient(235deg, #9356DC, #FF79DA);
+  background: -webkit-linear-gradient(235deg, #9356DC, #FF79DA);
+  color: #5f5f5f;
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+  -webkit-text-stroke-width: thin;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+section .fab, section .far {
+  font-weight: bold;
+}
+section > button {
+  width: 194px;
+  margin-top: 6%;
+  margin-bottom: 18%;
+  height: 50px;
+  border: 0px solid black;
+  border-radius: 50px;
+  color: white;
+  font-family: "Roboto";
+  font-size: 1em;
+  background: linear-gradient(174deg, #FF79DA, #9356DC);
+  box-shadow: 0px 3px 9px #afafaf;
+  cursor: pointer;
+  outline: none;
+  transition: all 500ms;
+}
+section > button:hover {
+  background: linear-gradient(174deg, #ff81dc, #975cdd);
+  box-shadow: 0px 3px 9px #7d7d7d;
+}
+
+section > article {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 63px;
+  text-align: left;
+}
+section > article > h2 {
+  position: absolute;
+  left: 5%;
+  font-family: "Roboto";
+  font-size: 1em;
+  margin-top: 8px;
+  padding-bottom: 4px;
+  color: #4c4c4c;
+  font-weight: inherit;
+  border-bottom: 3.5px solid #99E2D0;
+  width: 40px;
+}
+
+section > article > div {
+  display: flex;
+  flex-wrap: wrap;
+  width: 93%;
+  min-height: 69px;
+  margin-top: 51px;
+  margin-bottom: -36px;
+  background: white;
+  border: 0px solid white;
+  border-radius: 14px;
+  box-shadow: 0px 2.5px 10px #cecece;
+  font-family: "Roboto";
+  text-align: left;
+  animation: carte 1250ms backwards;
+  cursor: pointer;
+}
+section > article > div > h3 {
+  font-size: 1.1em;
+  margin-left: 10px;
+  margin-top: 13px;
+  width: 78%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  transition: 450ms;
+}
+section > article > div > p:nth-of-type(1) {
+  margin-left: 10px;
+  margin-top: -13px;
+  margin-bottom: 11px;
+  font-size: 0.9em;
+  color: #313131;
+  width: 78%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  transition: 450ms;
+}
+section > article > div > p:nth-of-type(2) {
+  font-weight: bold;
+  color: #3c3c3c;
+  position: absolute;
+  right: 10%;
+  margin-top: 38px;
+  transition: 450ms;
+}
+section > article > div > div {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  right: 3%;
+  width: 16.5%;
+  height: 46px;
+  padding-top: 23px;
+  border: 0px solid black;
+  border-top-right-radius: 14px;
+  border-bottom-right-radius: 14px;
+  background: #99E2D0;
+  transform-origin: right;
+  transform: scaleX(0);
+  transition: 450ms;
+}
+section > article > div > div > i {
+  color: white;
+  font-size: 1.35em;
+  position: inherit;
+  transition: 450ms;
+}
+section > article > div > #carte-div {
+  height: 54px;
+  padding-top: 31px;
+}
+section > article > div:hover > h3 {
+  width: 60%;
+  transition: 680ms;
+}
+section > article > div:hover > p:nth-of-type(1) {
+  width: 60%;
+  transition: 680ms;
+}
+section > article > div:hover > p:nth-of-type(2) {
+  right: 25%;
+  transition: 580ms;
+}
+section > article > div:hover > div {
+  transform: scaleX(1);
+  transition: 580ms;
+}
+section > article > div:hover > div > i {
+  animation: select 580ms backwards;
+}
+
+section > article:nth-of-type(1) > div {
+  animation-delay: 0ms;
+}
+section > article:nth-of-type(2) > div {
+  animation-delay: 500ms;
+}
+section > article:nth-of-type(3) > div {
+  animation-delay: 750ms;
+}
+
+@keyframes carte {
+  0% {
+    opacity: 0;
+    margin-top: 62px;
+  }
+  100% {
+    opacity: 1;
+    margin-top: 51px;
+  }
+}
+@keyframes select {
+  0% {
+    transform: rotate(100deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@media screen and (min-width: 450px) and (max-width: 768px) {
+  body > div > img {
+    width: 100%;
+    height: auto;
+    margin-bottom: -10%;
+  }
+
+  section > article > div {
+    margin-top: 51px;
+    margin-bottom: -36px;
+  }
+}
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  header {
+    position: absolute;
+    top: 0px;
+    text-align: center;
+    width: 100%;
+    height: 66px;
+    background: white;
+  }
+  header > a {
+    position: absolute;
+    left: 4%;
+    top: 36%;
+  }
+
+  body > div > img {
+    width: 100%;
+    height: auto;
+    margin-top: -15%;
+    margin-bottom: -11%;
+  }
+
+  section > h1 {
+    padding-left: 40px;
+    margin-bottom: 25px;
+  }
+  section > i {
+    right: 7%;
+  }
+  section > article {
+    padding-left: 18%;
+    padding-right: 18%;
+  }
+  section > article > h2 {
+    left: 19%;
+  }
+  section > article > div {
+    margin-top: 51px;
+    margin-bottom: -36px;
+  }
+  section > article > div > p:nth-of-type(2) {
+    right: inherit;
+    margin-left: 51.5%;
+  }
+  section > article > div:hover > p:nth-of-type(2) {
+    right: inherit;
+    margin-left: 34%;
+  }
+  section > article > div > div {
+    right: inherit;
+    margin-left: 43%;
+  }
+  section > button {
+    margin-bottom: 12%;
+  }
+}
+@media screen and (min-width: 1025px) and (max-width: 1440px) {
+  header {
+    position: absolute;
+    top: 0px;
+    text-align: center;
+    width: 100%;
+    height: 66px;
+    background: white;
+  }
+  header > a {
+    position: absolute;
+    left: 4%;
+    top: 36%;
+  }
+
+  body > div > img {
+    width: 100%;
+    height: auto;
+    margin-top: -21%;
+    margin-bottom: -15%;
+  }
+
+  section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-left: 1%;
+  }
+  section > h1 {
+    padding-left: 20px;
+    margin-bottom: 35px;
+    font-size: 1.75em;
+    width: 100%;
+  }
+  section > i {
+    right: 5%;
+  }
+  section > article {
+    padding-left: inherit;
+    padding-right: inherit;
+    justify-content: normal;
+    width: 32%;
+    align-items: baseline;
+    height: fit-content;
+  }
+  section > article > h2 {
+    left: inherit;
+  }
+  section > article > div {
+    margin-top: 51px;
+    margin-bottom: -36px;
+  }
+  section > article > div > p:nth-of-type(2) {
+    right: inherit;
+    margin-left: 24%;
+  }
+  section > article > div:hover > h3 {
+    width: 50%;
+  }
+  section > article > div:hover > p:nth-of-type(1) {
+    width: 50%;
+  }
+  section > article > div:hover > p:nth-of-type(2) {
+    right: inherit;
+    margin-left: 18%;
+  }
+  section > article > div > div {
+    right: inherit;
+    margin-left: 23.35%;
+    width: 6.5%;
+    height: 46px;
+    padding-top: 23px;
+  }
+  section > article > div > #carte-div {
+    height: 54px;
+    padding-top: 32px;
+  }
+  section > button {
+    margin-bottom: 7%;
+    margin-top: 4%;
+  }
+}
+@media screen and (min-width: 1441px) and (max-width: 1940px) {
+  header {
+    position: absolute;
+    top: 0px;
+    text-align: center;
+    width: 100%;
+    height: 66px;
+    background: white;
+  }
+  header > a {
+    position: absolute;
+    left: 4%;
+    top: 36%;
+  }
+
+  body > div > img {
+    width: 100%;
+    height: auto;
+    margin-top: -21%;
+    margin-bottom: -15%;
+  }
+
+  section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-left: 1%;
+  }
+  section > h1 {
+    padding-left: 20px;
+    margin-bottom: 35px;
+    font-size: 1.75em;
+    width: 100%;
+  }
+  section > i {
+    right: 5%;
+  }
+  section > article {
+    padding-left: inherit;
+    padding-right: inherit;
+    justify-content: normal;
+    width: 459px;
+    align-items: baseline;
+    height: fit-content;
+  }
+  section > article > h2 {
+    left: inherit;
+  }
+  section > article > div {
+    margin-top: 51px;
+    margin-bottom: -36px;
+  }
+  section > article > div > p:nth-of-type(2) {
+    right: inherit;
+    margin-left: 345px;
+  }
+  section > article > div:hover > h3 {
+    width: 233px;
+  }
+  section > article > div:hover > p:nth-of-type(1) {
+    width: 233px;
+  }
+  section > article > div:hover > p:nth-of-type(2) {
+    right: inherit;
+    margin-left: 260px;
+  }
+  section > article > div > div {
+    right: inherit;
+    margin-left: 333px;
+    width: 94px;
+    height: 46px;
+    padding-top: 24px;
+  }
+  section > article > div > #carte-div {
+    height: 54px;
+    padding-top: 32px;
+  }
+  section > button {
+    margin-bottom: 7%;
+    margin-top: 4%;
+    margin-right: 30%;
+    margin-left: 30%;
+  }
+}
+@media screen and (min-width: 1025px) and (max-width: 1440px) {
+  header {
+    position: absolute;
+    top: 0px;
+    text-align: center;
+    width: 100%;
+    height: 66px;
+    background: white;
+  }
+  header > a {
+    position: absolute;
+    left: 4%;
+    top: 36%;
+  }
+
+  body > div > img {
+    width: 100%;
+    height: auto;
+    margin-top: -21%;
+    margin-bottom: -15%;
+  }
+
+  section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-left: 1%;
+  }
+  section > h1 {
+    padding-left: 20px;
+    margin-bottom: 35px;
+    font-size: 1.75em;
+    width: 100%;
+  }
+  section > i {
+    right: 5%;
+  }
+  section > article {
+    padding-left: inherit;
+    padding-right: inherit;
+    justify-content: normal;
+    width: 32%;
+    align-items: baseline;
+    height: fit-content;
+  }
+  section > article > h2 {
+    left: inherit;
+  }
+  section > article > div {
+    margin-top: 51px;
+    margin-bottom: -36px;
+  }
+  section > article > div > p:nth-of-type(2) {
+    right: inherit;
+    margin-left: 24%;
+  }
+  section > article > div:hover > h3 {
+    width: 50%;
+  }
+  section > article > div:hover > p:nth-of-type(1) {
+    width: 50%;
+  }
+  section > article > div:hover > p:nth-of-type(2) {
+    right: inherit;
+    margin-left: 18%;
+  }
+  section > article > div > div {
+    right: inherit;
+    margin-left: 23.35%;
+    width: 6.5%;
+    height: 46px;
+    padding-top: 23px;
+  }
+  section > article > div > #carte-div {
+    height: 54px;
+    padding-top: 32px;
+  }
+  section > button {
+    margin-bottom: 7%;
+    margin-top: 4%;
+  }
+}
+@media screen and (min-width: 1941px) {
+  header {
+    position: absolute;
+    top: 0px;
+    text-align: center;
+    width: 100%;
+    height: 66px;
+    background: white;
+  }
+  header > a {
+    position: absolute;
+    left: 4%;
+    top: 36%;
+  }
+
+  body > div > img {
+    width: 100%;
+    height: auto;
+    margin-top: -27%;
+    margin-bottom: -17%;
+  }
+
+  section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-left: 1%;
+  }
+  section > h1 {
+    padding-left: 20px;
+    margin-bottom: 35px;
+    font-size: 2em;
+    width: 100%;
+  }
+  section > i {
+    right: 3%;
+    font-size: 2em;
+  }
+  section > article {
+    padding-left: inherit;
+    padding-right: inherit;
+    justify-content: normal;
+    width: 470px;
+    align-items: baseline;
+    height: fit-content;
+    margin-top: 20px;
+  }
+  section > article > h2 {
+    left: inherit;
+    font-size: 1.5em;
+    margin-top: -8px;
+  }
+  section > article > div {
+    margin-top: 51px;
+    margin-bottom: -36px;
+  }
+  section > article > div > h3 {
+    font-size: 1.25em;
+  }
+  section > article > div > p:nth-of-type(1) {
+    font-size: 1.05em;
+  }
+  section > article > div > p:nth-of-type(2) {
+    right: inherit;
+    margin-left: 345px;
+    font-size: 1.15em;
+  }
+  section > article > div:hover > h3 {
+    width: 233px;
+  }
+  section > article > div:hover > p:nth-of-type(1) {
+    width: 233px;
+  }
+  section > article > div:hover > p:nth-of-type(2) {
+    right: inherit;
+    margin-left: 260px;
+  }
+  section > article > div > div {
+    right: inherit;
+    margin-left: 343px;
+    width: 94px;
+    height: 49px;
+    padding-top: 27px;
+  }
+  section > article > div > #carte-div {
+    height: 54px;
+    padding-top: 32px;
+  }
+  section > button {
+    margin-bottom: 4%;
+    margin-top: 2.5%;
+    margin-right: 33%;
+    margin-left: 33%;
+    width: 203px;
+    height: 60px;
+    font-size: 1.3em;
+  }
+}
+
+/*# sourceMappingURL=stylemenu.css.map */
