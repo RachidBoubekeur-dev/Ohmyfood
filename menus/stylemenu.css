@@ -221,7 +221,7 @@ section > article > div > div > i {
 }
 section > article > div > #carte-div {
   height: 54px;
-  padding-top: 31px;
+  padding-top: 32px;
 }
 section > article > div:hover > h3 {
   width: 60%;
@@ -313,11 +313,14 @@ section > article:nth-of-type(3) > div {
     right: 7%;
   }
   section > article {
-    padding-left: 18%;
-    padding-right: 18%;
+    padding-left: 1%;
+    padding-right: 1%;
+    display: inline-flex;
+    width: 45%;
   }
   section > article > h2 {
-    left: 19%;
+    left: inherit;
+    margin-left: -36%;
   }
   section > article > div {
     margin-top: 51px;
@@ -325,18 +328,28 @@ section > article:nth-of-type(3) > div {
   }
   section > article > div > p:nth-of-type(2) {
     right: inherit;
-    margin-left: 51.5%;
+    margin-left: 35.5%;
+  }
+  section > article > div:hover > h3 {
+    width: 51%;
+  }
+  section > article > div:hover > p:nth-of-type(1) {
+    width: 51%;
   }
   section > article > div:hover > p:nth-of-type(2) {
     right: inherit;
-    margin-left: 34%;
+    margin-left: 26%;
   }
   section > article > div > div {
     right: inherit;
-    margin-left: 43%;
+    margin-left: 33%;
+    width: 9%;
+    height: 47px;
   }
   section > button {
     margin-bottom: 12%;
+    margin-left: 20%;
+    margin-right: 20%;
   }
 }
 @media screen and (min-width: 1025px) and (max-width: 1440px) {
