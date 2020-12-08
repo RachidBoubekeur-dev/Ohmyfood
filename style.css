@@ -45,7 +45,7 @@ body {
   margin: 0px;
 }
 
-body > section {
+body > section:nth-of-type(1) {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -55,7 +55,7 @@ body > section {
   text-align: center;
   font-family: "Roboto";
 }
-body > section > p {
+body > section:nth-of-type(1) > p {
   font-size: 1em;
   color: #424242;
   font-weight: bold;
@@ -68,17 +68,17 @@ body > section > p {
   background-color: #dedede;
   box-shadow: inset 0px 2px 5px rgba(177, 177, 177, 0.8);
 }
-body > section > p > i {
+body > section:nth-of-type(1) > p > i {
   margin-right: 17px;
 }
-body > section > h1 {
+body > section:nth-of-type(1) > h1 {
   font-family: "Roboto";
   font-weight: bold;
   width: 240px;
   font-size: 1.4em;
   margin-top: -20px;
 }
-body > section > h3 {
+body > section:nth-of-type(1) > h3 {
   font-family: "Roboto";
   font-weight: 400;
   width: 370px;
@@ -86,7 +86,7 @@ body > section > h3 {
   margin-top: -63px;
   font-size: 1.1em;
 }
-body > section > button {
+body > section:nth-of-type(1) > button {
   width: 226px;
   margin-top: -45px;
   height: 50px;
@@ -101,19 +101,19 @@ body > section > button {
   outline: none;
   transition: all 500ms;
 }
-body > section > button:hover {
+body > section:nth-of-type(1) > button:hover {
   background: linear-gradient(174deg, #ff81dc, #975cdd);
   box-shadow: 0px 3px 9px #7d7d7d;
 }
 
-body > article:nth-of-type(1) {
+body > section:nth-of-type(2) {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   height: 430px;
   padding-bottom: 37px;
 }
-body > article:nth-of-type(1) > h2 {
+body > section:nth-of-type(2) > h2 {
   flex: auto;
   font-family: "Roboto";
   margin-left: 20px;
@@ -121,7 +121,7 @@ body > article:nth-of-type(1) > h2 {
   margin-bottom: -7px;
   font-weight: bold;
 }
-body > article:nth-of-type(1) > div {
+body > section:nth-of-type(2) > article {
   display: flex;
   align-items: center;
   width: 87%;
@@ -134,10 +134,10 @@ body > article:nth-of-type(1) > div {
   transition: all 250ms;
   cursor: pointer;
 }
-body > article:nth-of-type(1) > div:hover {
-  background: #f3e8f07d;
+body > section:nth-of-type(2) > article:hover {
+  background: #ece1fa;
 }
-body > article:nth-of-type(1) > div > p {
+body > section:nth-of-type(2) > article > p {
   color: white;
   border: 1px solid #9356DC;
   border-radius: 50px;
@@ -152,60 +152,60 @@ body > article:nth-of-type(1) > div > p {
   margin-top: 20px;
   margin-right: 7%;
 }
-body > article:nth-of-type(1) > div:nth-of-type(1) > i {
+body > section:nth-of-type(2) > article:nth-of-type(1) > i {
   color: gray;
   font-size: 1.3em;
 }
-body > article:nth-of-type(1) > div:nth-of-type(1):hover > i {
+body > section:nth-of-type(2) > article:nth-of-type(1):hover > i {
   color: #9356DC;
 }
-body > article:nth-of-type(1) > div:nth-of-type(2) > i {
+body > section:nth-of-type(2) > article:nth-of-type(2) > i {
   color: gray;
   font-size: 1.2em;
   margin-right: -6.5px;
 }
-body > article:nth-of-type(1) > div:nth-of-type(2):hover > i {
+body > section:nth-of-type(2) > article:nth-of-type(2):hover > i {
   color: #9356DC;
 }
-body > article:nth-of-type(1) > div:nth-of-type(3) > i {
+body > section:nth-of-type(2) > article:nth-of-type(3) > i {
   color: gray;
   font-size: 1.05em;
   margin-right: -8px;
 }
-body > article:nth-of-type(1) > div:nth-of-type(3):hover > i {
+body > section:nth-of-type(2) > article:nth-of-type(3):hover > i {
   color: #9356DC;
 }
-body > article:nth-of-type(1) > div > h3 {
+body > section:nth-of-type(2) > article > h3 {
   margin-left: 9%;
   font-size: 17px;
 }
-body > article:nth-of-type(1) > div:nth-of-type(2) {
+body > section:nth-of-type(2) > article:nth-of-type(2) {
   margin-bottom: -12px;
   margin-top: -12px;
 }
 
-body > article:nth-of-type(2) {
+body > section:nth-of-type(3) {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   background: #f2f2f2;
   padding-bottom: 13%;
 }
-body > article:nth-of-type(2) > h2 {
+body > section:nth-of-type(3) > h2 {
   flex: auto;
   font-family: "Roboto";
   margin-left: 20px;
   margin-top: 50px;
   font-weight: bold;
 }
-body > article:nth-of-type(2) > a {
+body > section:nth-of-type(3) > article > a {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   color: black;
   text-decoration: none;
 }
-body > article:nth-of-type(2) > a > figure {
+body > section:nth-of-type(3) > article > a > figure {
   display: flex;
   flex-wrap: wrap;
   width: 90%;
@@ -213,7 +213,7 @@ body > article:nth-of-type(2) > a > figure {
   margin-right: 0px;
   margin-top: 2px;
 }
-body > article:nth-of-type(2) > a > figure > span {
+body > section:nth-of-type(3) > article > a > figure > span {
   position: absolute;
   margin-top: 14px;
   right: 8%;
@@ -228,14 +228,14 @@ body > article:nth-of-type(2) > a > figure > span {
   font-size: 0.86em;
   font-weight: bold;
 }
-body > article:nth-of-type(2) > a > figure > img {
+body > section:nth-of-type(3) > article > a > figure > img {
   width: 100%;
   height: auto;
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
   box-shadow: 0px 3px 8px #a5a5a573;
 }
-body > article:nth-of-type(2) > a > figure > figcaption {
+body > section:nth-of-type(3) > article > a > figure > figcaption {
   width: 100%;
   height: 76px;
   border-bottom-left-radius: 15px;
@@ -246,14 +246,14 @@ body > article:nth-of-type(2) > a > figure > figcaption {
   padding-left: 15px;
   font-family: "Roboto";
 }
-body > article:nth-of-type(2) > a > figure > figcaption > h3 {
+body > section:nth-of-type(3) > article > a > figure > figcaption > h3 {
   margin-top: 15px;
 }
-body > article:nth-of-type(2) > a > figure > figcaption > p {
+body > section:nth-of-type(3) > article > a > figure > figcaption > p {
   font-size: 1.1em;
   margin-top: -17px;
 }
-body > article:nth-of-type(2) > a > figure > figcaption > i {
+body > section:nth-of-type(3) > article > a > figure > figcaption > i {
   position: absolute;
   margin-top: -55px;
   right: 12%;
@@ -268,7 +268,7 @@ body > article:nth-of-type(2) > a > figure > figcaption > i {
   -webkit-text-fill-color: transparent;
   transition: all 600ms;
 }
-body > article:nth-of-type(2) > a > figure > figcaption > i:hover {
+body > section:nth-of-type(3) > article > a > figure > figcaption > i:hover {
   color: -webkit-linear-gradient(235deg, #9356DC, #FF79DA);
   background: -webkit-linear-gradient(235deg, #9356DC, #FF79DA);
   color: #5f5f5f;
@@ -331,386 +331,436 @@ body > article:nth-of-type(2) > a > figure > figcaption > i:hover {
   }
 }
 @media screen and (min-width: 530px) and (max-width: 768px) {
-  body > section > h1 {
+  body > section:nth-of-type(1) > h1 {
     width: auto;
   }
-  body > section > h3 {
+  body > section:nth-of-type(1) > h3 {
     padding-left: 17%;
     padding-right: 17%;
   }
 
-  body > article:nth-of-type(1) > h2 {
+  body > section:nth-of-type(2) > h2 {
     width: 100%;
+    margin-left: 22px;
   }
-  body > article:nth-of-type(1) > div {
+  body > section:nth-of-type(2) > article {
     width: 397px;
   }
 
-  body > article:nth-of-type(2) > a > figure {
-    width: 75%;
+  body > section:nth-of-type(3) {
+    padding-bottom: 7%;
   }
-  body > article:nth-of-type(2) > a > figure > img {
+  body > section:nth-of-type(3) > h2 {
+    margin-left: 3%;
+    margin-bottom: 25px;
+    width: 100%;
+  }
+  body > section:nth-of-type(3) > article {
+    display: contents;
+  }
+  body > section:nth-of-type(3) > article > a {
+    display: contents;
+  }
+  body > section:nth-of-type(3) > article > a > figure {
+    width: 46%;
+    margin-left: 1.5%;
+    margin-right: 1.5%;
+    margin-top: 15px;
+  }
+  body > section:nth-of-type(3) > article > a > figure > img {
     height: auto;
   }
-  body > article:nth-of-type(2) > a > figure > span {
-    right: 15%;
+  body > section:nth-of-type(3) > article > a > figure > figcaption {
+    margin-top: -3px;
   }
-  body > article:nth-of-type(2) > a > figure > figcaption > i {
-    right: 18%;
+  body > section:nth-of-type(3) > article > a > figure > figcaption > i {
+    right: inherit;
+    margin-left: 36.2%;
+  }
+  body > section:nth-of-type(3) > article:nth-of-type(1) > a > figure > span {
+    right: 54%;
+  }
+  body > section:nth-of-type(3) > article:nth-of-type(2) > a > figure > span {
+    right: 5%;
   }
 }
 @media screen and (min-width: 769px) and (max-width: 1024px) {
-  body > section > h1 {
+  body > section:nth-of-type(1) > h1 {
     width: auto;
     font-size: 1.5em;
   }
-  body > section > h3 {
+  body > section:nth-of-type(1) > h3 {
     padding-left: 22%;
     padding-right: 22%;
     font-size: 1.2em;
   }
 
-  body > article:nth-of-type(1) > h2 {
+  body > section:nth-of-type(2) > h2 {
     width: 100%;
     margin-left: 6%;
   }
-  body > article:nth-of-type(1) > div {
+  body > section:nth-of-type(2) > article {
     width: 410px;
     margin-left: 10%;
     margin-right: 10%;
   }
 
-  body > article:nth-of-type(2) {
+  body > section:nth-of-type(3) {
     padding-bottom: 7%;
   }
-  body > article:nth-of-type(2) > h2 {
+  body > section:nth-of-type(3) > h2 {
     margin-left: 6%;
     margin-bottom: 25px;
     width: 100%;
   }
-  body > article:nth-of-type(2) > a {
+  body > section:nth-of-type(3) > article {
     display: contents;
   }
-  body > article:nth-of-type(2) > a > figure {
+  body > section:nth-of-type(3) > article > a {
+    display: contents;
+  }
+  body > section:nth-of-type(3) > article > a > figure {
     width: 40%;
     margin-left: 4%;
     margin-right: 4%;
     margin-top: 15px;
   }
-  body > article:nth-of-type(2) > a > figure > img {
+  body > section:nth-of-type(3) > article > a > figure > img {
     height: auto;
   }
-  body > article:nth-of-type(2) > a > figure > span {
-    right: inherit;
-    margin-left: 31%;
-  }
-  body > article:nth-of-type(2) > a > figure > figcaption {
+  body > section:nth-of-type(3) > article > a > figure > figcaption {
     margin-top: -3px;
   }
-  body > article:nth-of-type(2) > a > figure > figcaption > i {
+  body > section:nth-of-type(3) > article > a > figure > figcaption > i {
     right: inherit;
     margin-left: 33%;
   }
+  body > section:nth-of-type(3) > article:nth-of-type(1) > a > figure > span {
+    right: 55.5%;
+  }
+  body > section:nth-of-type(3) > article:nth-of-type(2) > a > figure > span {
+    right: 7.5%;
+  }
 }
 @media screen and (min-width: 1025px) and (max-width: 1440px) {
-  body > section > p {
+  body > section:nth-of-type(1) > p {
     font-size: 1.05em;
   }
-  body > section > h1 {
+  body > section:nth-of-type(1) > h1 {
     width: auto;
     font-size: 1.65em;
   }
-  body > section > h3 {
+  body > section:nth-of-type(1) > h3 {
     padding-left: 30%;
     padding-right: 30%;
     font-size: 1.35em;
     width: 377px;
   }
 
-  body > article:nth-of-type(1) {
+  body > section:nth-of-type(2) {
     justify-content: space-evenly;
     height: 275px;
     padding-bottom: 20px;
   }
-  body > article:nth-of-type(1) > h2 {
+  body > section:nth-of-type(2) > h2 {
     width: 100%;
     margin-left: 4%;
   }
-  body > article:nth-of-type(1) > div {
+  body > section:nth-of-type(2) > article {
     width: 27%;
     margin-left: 0%;
     margin-right: 0%;
   }
-  body > article:nth-of-type(1) > div:nth-of-type(2) {
+  body > section:nth-of-type(2) > article:nth-of-type(2) {
     margin-bottom: 0px;
     margin-top: 0px;
   }
 
-  body > article:nth-of-type(2) {
+  body > section:nth-of-type(3) {
     padding-bottom: 7%;
   }
-  body > article:nth-of-type(2) > h2 {
+  body > section:nth-of-type(3) > h2 {
     margin-left: 4%;
     margin-bottom: 25px;
     width: 100%;
   }
-  body > article:nth-of-type(2) > a {
+  body > section:nth-of-type(3) > article {
     display: contents;
   }
-  body > article:nth-of-type(2) > a > figure {
+  body > section:nth-of-type(3) > article > a {
+    display: contents;
+  }
+  body > section:nth-of-type(3) > article > a > figure {
     width: 40%;
     margin-left: 4%;
     margin-right: 4%;
     margin-top: 15px;
   }
-  body > article:nth-of-type(2) > a > figure > img {
+  body > section:nth-of-type(3) > article > a > figure > img {
     height: auto;
   }
-  body > article:nth-of-type(2) > a > figure > figcaption {
+  body > section:nth-of-type(3) > article > a > figure > figcaption {
     margin-top: -5px;
   }
-  body > article:nth-of-type(2) > a > figure > figcaption > i {
+  body > section:nth-of-type(3) > article > a > figure > figcaption > i {
     right: inherit;
     margin-left: 34%;
   }
-  body > article:nth-of-type(2) > a:nth-of-type(1) > figure > span {
+  body > section:nth-of-type(3) > article:nth-of-type(1) > a > figure > span {
     right: 55.5%;
     margin-left: 0%;
   }
-  body > article:nth-of-type(2) > a:nth-of-type(2) > figure > span {
+  body > section:nth-of-type(3) > article:nth-of-type(2) > a > figure > span {
     right: 7.5%;
     margin-left: 0%;
   }
 }
 @media screen and (min-width: 1441px) and (max-width: 1940px) {
-  body > section {
+  body > section:nth-of-type(1) {
     height: 345px;
   }
-  body > section > p {
+  body > section:nth-of-type(1) > p {
     font-size: 1.1em;
     margin-bottom: 15px;
   }
-  body > section > h1 {
+  body > section:nth-of-type(1) > h1 {
     width: auto;
     font-size: 1.65em;
   }
-  body > section > h3 {
+  body > section:nth-of-type(1) > h3 {
     padding-left: 36%;
     padding-right: 36%;
     font-size: 1.4em;
     width: auto;
   }
-  body > section > button {
+  body > section:nth-of-type(1) > button {
     width: 268px;
     height: 58px;
     font-size: 1.11em;
   }
 
-  body > article:nth-of-type(1) {
+  body > section:nth-of-type(2) {
     justify-content: space-evenly;
     height: 250px;
     padding-bottom: 20px;
   }
-  body > article:nth-of-type(1) > h2 {
+  body > section:nth-of-type(2) > h2 {
     width: 100%;
     margin-left: 4%;
     font-size: 1.6em;
   }
-  body > article:nth-of-type(1) > div {
+  body > section:nth-of-type(2) > article {
     width: 380px;
     margin-left: 0%;
     margin-right: 0%;
   }
-  body > article:nth-of-type(1) > div > p {
+  body > section:nth-of-type(2) > article > p {
     padding: 7px;
     padding-top: 3px;
     width: 11.5px;
     font-size: 16.5px;
     height: 15px;
   }
-  body > article:nth-of-type(1) > div:nth-of-type(1) > i {
+  body > section:nth-of-type(2) > article:nth-of-type(1) > i {
     font-size: 1.4em;
   }
-  body > article:nth-of-type(1) > div:nth-of-type(2) {
+  body > section:nth-of-type(2) > article:nth-of-type(2) {
     margin-bottom: 0px;
     margin-top: 0px;
   }
-  body > article:nth-of-type(1) > div:nth-of-type(2) > i {
+  body > section:nth-of-type(2) > article:nth-of-type(2) > i {
     font-size: 1.3em;
   }
-  body > article:nth-of-type(1) > div:nth-of-type(3) > i {
+  body > section:nth-of-type(2) > article:nth-of-type(3) > i {
     font-size: 1.15em;
   }
-  body > article:nth-of-type(1) > div > h3 {
+  body > section:nth-of-type(2) > article > h3 {
     font-size: 1.21em;
   }
 
-  body > article:nth-of-type(2) {
+  body > section:nth-of-type(3) {
     padding-bottom: 5%;
   }
-  body > article:nth-of-type(2) > h2 {
+  body > section:nth-of-type(3) > h2 {
     margin-left: 4%;
     margin-bottom: 39px;
     width: 100%;
     font-size: 1.6em;
   }
-  body > article:nth-of-type(2) > a {
+  body > section:nth-of-type(3) > article {
     display: contents;
   }
-  body > article:nth-of-type(2) > a > figure {
+  body > section:nth-of-type(3) > article > a {
+    display: contents;
+  }
+  body > section:nth-of-type(3) > article > a > figure {
     width: 34%;
     margin-left: 6%;
     margin-right: 6%;
     margin-top: 15px;
     margin-bottom: 35px;
   }
-  body > article:nth-of-type(2) > a > figure > img {
+  body > section:nth-of-type(3) > article > a > figure > img {
     height: auto;
   }
-  body > article:nth-of-type(2) > a > figure > figcaption {
+  body > section:nth-of-type(3) > article > a > figure > figcaption {
     margin-top: -10px;
     height: 80px;
   }
-  body > article:nth-of-type(2) > a > figure > figcaption > h3 {
+  body > section:nth-of-type(3) > article > a > figure > figcaption > h3 {
     font-size: 1.3em;
   }
-  body > article:nth-of-type(2) > a > figure > figcaption > p {
+  body > section:nth-of-type(3) > article > a > figure > figcaption > p {
     font-size: 1.15em;
   }
-  body > article:nth-of-type(2) > a > figure > figcaption > i {
+  body > section:nth-of-type(3) > article > a > figure > figcaption > i {
     right: inherit;
     margin-left: 30%;
     font-size: 1.6em;
     margin-top: -58px;
   }
-  body > article:nth-of-type(2) > a:nth-of-type(1) > figure > span {
+  body > section:nth-of-type(3) > article:nth-of-type(1) > a > figure > span {
     right: 57.5%;
     margin-left: 0%;
     font-size: 1em;
   }
-  body > article:nth-of-type(2) > a:nth-of-type(2) > figure > span {
+  body > section:nth-of-type(3) > article:nth-of-type(2) > a > figure > span {
     right: 11.5%;
     margin-left: 0%;
     font-size: 1em;
   }
 }
 @media screen and (min-width: 1941px) {
-  body > section {
+  body > section:nth-of-type(1) {
     height: 355px;
   }
-  body > section > p {
+  body > section:nth-of-type(1) > p {
     font-size: 1.3em;
     margin-bottom: 15px;
   }
-  body > section > h1 {
+  body > section:nth-of-type(1) > h1 {
     width: auto;
     font-size: 1.8em;
   }
-  body > section > h3 {
+  body > section:nth-of-type(1) > h3 {
     padding-left: 39%;
     padding-right: 39%;
     font-size: 1.5em;
     width: auto;
   }
-  body > section > button {
+  body > section:nth-of-type(1) > button {
     width: 283px;
     height: 58px;
     font-size: 1.2em;
   }
 
-  body > article:nth-of-type(1) {
+  body > section:nth-of-type(2) {
     justify-content: space-around;
     height: 250px;
     padding-bottom: 20px;
   }
-  body > article:nth-of-type(1) > h2 {
+  body > section:nth-of-type(2) > h2 {
     width: 100%;
-    margin-left: 3.5%;
+    margin-left: 1%;
     font-size: 1.7em;
   }
-  body > article:nth-of-type(1) > div {
+  body > section:nth-of-type(2) > article {
     width: 459px;
     margin-left: 0%;
     margin-right: 0%;
   }
-  body > article:nth-of-type(1) > div > p {
+  body > section:nth-of-type(2) > article > p {
     padding: 8px;
     padding-top: 3px;
     width: 11px;
     font-size: 18px;
     height: 15px;
   }
-  body > article:nth-of-type(1) > div:nth-of-type(1) > i {
+  body > section:nth-of-type(2) > article:nth-of-type(1) > i {
     font-size: 1.4em;
   }
-  body > article:nth-of-type(1) > div:nth-of-type(2) {
+  body > section:nth-of-type(2) > article:nth-of-type(2) {
     margin-bottom: 0px;
     margin-top: 0px;
   }
-  body > article:nth-of-type(1) > div:nth-of-type(2) > i {
+  body > section:nth-of-type(2) > article:nth-of-type(2) > i {
     font-size: 1.3em;
   }
-  body > article:nth-of-type(1) > div:nth-of-type(3) > i {
+  body > section:nth-of-type(2) > article:nth-of-type(3) > i {
     font-size: 1.15em;
   }
-  body > article:nth-of-type(1) > div > h3 {
+  body > section:nth-of-type(2) > article > h3 {
     font-size: 1.21em;
   }
 
-  body > article:nth-of-type(2) {
+  body > section:nth-of-type(3) {
     padding-bottom: 3%;
   }
-  body > article:nth-of-type(2) > h2 {
+  body > section:nth-of-type(3) > h2 {
     margin-left: 1%;
     margin-bottom: 39px;
     width: 100%;
     font-size: 1.7em;
   }
-  body > article:nth-of-type(2) > a {
+  body > section:nth-of-type(3) > article {
     display: contents;
   }
-  body > article:nth-of-type(2) > a > figure {
+  body > section:nth-of-type(3) > article > a {
+    display: contents;
+  }
+  body > section:nth-of-type(3) > article > a > figure {
     width: 23%;
     margin-left: 1%;
     margin-right: 1%;
     margin-top: 15px;
     margin-bottom: 35px;
   }
-  body > article:nth-of-type(2) > a > figure > img {
+  body > section:nth-of-type(3) > article > a > figure > img {
     height: auto;
   }
-  body > article:nth-of-type(2) > a > figure > figcaption {
+  body > section:nth-of-type(3) > article > a > figure > figcaption {
     margin-top: -12px;
     height: 90px;
   }
-  body > article:nth-of-type(2) > a > figure > figcaption > h3 {
+  body > section:nth-of-type(3) > article > a > figure > figcaption > h3 {
     font-size: 1.45em;
   }
-  body > article:nth-of-type(2) > a > figure > figcaption > p {
+  body > section:nth-of-type(3) > article > a > figure > figcaption > p {
     font-size: 1.3em;
   }
-  body > article:nth-of-type(2) > a > figure > figcaption > i {
+  body > section:nth-of-type(3) > article > a > figure > figcaption > i {
     right: inherit;
     margin-left: 19.5%;
     font-size: 1.86em;
     margin-top: -63px;
   }
-  body > article:nth-of-type(2) > a:nth-of-type(1) > figure > span {
+  body > section:nth-of-type(3) > article:nth-of-type(1) > a > figure > span {
     right: 77%;
     margin-left: 0%;
     font-size: 1.2em;
   }
-  body > article:nth-of-type(2) > a:nth-of-type(2) > figure > span {
+  body > section:nth-of-type(3) > article:nth-of-type(2) > a > figure > span {
     right: 52%;
     margin-left: 0%;
     font-size: 1.2em;
   }
 
+  footer {
+    padding-left: 0%;
+    text-align: center;
+    height: 131px;
+  }
   footer > h2 {
     font-size: 1.35em;
+    text-align: initial;
+    padding-left: 6%;
+    margin-bottom: 0%;
+    padding-top: 0.2%;
   }
   footer > h3 {
-    font-size: 1em;
+    font-size: 1.1em;
+    display: inline-block;
+    margin-right: 2.5%;
   }
 
   #loading > img {
