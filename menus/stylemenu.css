@@ -697,6 +697,22 @@ section > article:nth-of-type(3) > div {
     height: 60px;
     font-size: 1.3em;
   }
+
+  footer {
+    padding-left: 0%;
+    text-align: center;
+    height: 131px;
+  }
+  footer > h2 {
+    font-size: 1.35em;
+    margin-bottom: 0%;
+    padding-top: 0.2%;
+  }
+  footer > h3 {
+    font-size: 1.1em;
+    display: inline-block;
+    margin-right: 2.5%;
+  }
 }
 
 /*# sourceMappingURL=stylemenu.css.map */

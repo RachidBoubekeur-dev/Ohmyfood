@@ -719,4 +719,22 @@ section > article {
             font-size: 1.3em;
         }
     }
+
+    footer {
+        padding-left: 0%;
+        text-align: center;
+        height: 131px;
+
+        & > h2 {
+            font-size: 1.35em;
+            margin-bottom: 0%;
+            padding-top: 0.2%;
+        }
+
+        & > h3 {
+            font-size: 1.1em;
+            display: inline-block;
+            margin-right: 2.5%;
+        }
+    }
 }

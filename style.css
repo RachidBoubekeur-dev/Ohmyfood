@@ -752,8 +752,6 @@ body > section:nth-of-type(3) > article > a > figure > figcaption > i:hover {
   }
   footer > h2 {
     font-size: 1.35em;
-    text-align: initial;
-    padding-left: 6%;
     margin-bottom: 0%;
     padding-top: 0.2%;
   }
